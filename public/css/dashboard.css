@@ -1,0 +1,91 @@
+body {
+    padding-top: 56px;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Menempatkan sidebar di atas konten utama */
+    padding: 48px 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 56px); /* Mengisi tinggi sidebar sesuai tinggi viewport */
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Memberikan kemampuan scroll jika isi sidebar melebihi tinggi viewport */
+    /* Scrollbar kustom */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar .nav-link {
+    font-weight: 500;
+    color: #333; /* Warna teks sidebar */
+  }
+
+  .sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #727272; /* Warna ikon sidebar */
+  }
+
+  .sidebar .nav-link.active {
+    color: #0d6efd; /* Warna teks sidebar saat aktif */
+  }
+
+  .sidebar .nav-link:hover .feather,
+  .sidebar .nav-link.active .feather {
+    color: inherit;
+  }
+
+  .btn-floating {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    z-index: 1100; /* Menempatkan tombol di atas konten lainnya */
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #fff; /* Warna teks navbar */
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75); /* Warna teks navbar saat dihover */
+  }
+
+  #myChart {
+    max-width: 100%;
+  }
+
+
+  html[dir="rtl"] body {
+    padding-right: 16px;
+    padding-left: 0;
+  }
+
+  html[dir="rtl"] .sidebar {
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.1);
+  }
+
+  html[dir="rtl"] .navbar-brand,
+  html[dir="rtl"] .navbar .navbar-nav .nav-link {
+    padding-right: 16px;
+    padding-left: 0;
+  }
+
+  html[dir="rtl"] .btn-toolbar.mb-2.mb-md-0 .btn-group.me-2 {
+    margin-right: 0;
+    margin-left: 8px;
+  }
+
+  html[dir="rtl"] .btn-toolbar.mb-2.mb-md-0 .btn-group.me-2 button.btn {
+    margin-left: 4px;
+    margin-right: 0;
+  }

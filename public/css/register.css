@@ -1,0 +1,114 @@
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+.d-grid {
+    width: 100%;
+    text-align: center;
+}
+
+.form-outline {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 300px;
+    margin-left: 30px;
+}
+
+.form-outline input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.form-label {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    color: #6c757d;
+    transition: 0.2s;
+}
+
+.form-outline input:focus ~ .form-label,
+.form-outline input:valid ~ .form-label {
+    top: -0.5rem;
+    left: 0.75rem;
+    font-size: 0.8rem;
+    color: #6c757d;
+    background-color: #fff;
+    padding: 0 0.25rem;
+}
+
+.fas {
+    margin-bottom: 5px;
+}
+
+.d-flex {
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+.img-fluid{
+    width: 500px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    margin-left: 32px;
+
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+  }
+
+  .btn-block {
+    width: 100%;
+  }
+
+  .btn-primary:focus,
+  .btn-primary.focus {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
+  }
+
+  .btn:focus,
+  .btn.focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .btn-primary:disabled,
+  .btn-primary.disabled {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+  }
